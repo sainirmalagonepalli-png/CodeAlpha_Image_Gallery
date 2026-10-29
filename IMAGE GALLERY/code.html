@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Gallery</title>
+    <link rel="stylesheet" href="code.css">
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+<header>
+    <h1>Happy Space...!</h1>
+    <p>Discover the beauty of the world</p>
+</header>
+
+
+<!-- MAIN GALLERY -->
+<main id="mainGallery">
+
+    <!-- FILTER BUTTONS -->
+    <div class="filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="nature">Nature</button>
+        <button class="filter-btn" data-category="animals">Animals</button>
+        <button class="filter-btn" data-category="cities">Cities</button>
+    </div>
+
+
+    <!-- GALLERY CARDS -->
+    <div class="gallery">
+
+        <!-- MOUNTAIN -->
+        <div class="gallery-item" data-category="nature" data-collection="mountains">
+            <img
+                src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800"
+                alt="Mountain lake">
+            <div class="card-info">
+                <h3>Mountain Escape</h3>
+                <p>Explore beauty of mountains</p>
+                <span>View Collection →</span>
+            </div>
+        </div>
+
+
+        <!-- LOVELY COMPANION -->
+        <div class="gallery-item" data-category="animals" data-collection="dogs">
+            <img
+                src="https://i.pinimg.com/474x/49/f4/31/49f431da62c32daf1d8967b846035f4c.jpg"
+                alt="Cute dog">
+            <div class="card-info">
+                <h3>Pet Palace</h3>
+                <p>Little friends, endless love</p>
+                <span>View Collection →</span>
+            </div>
+        </div>
+
+
+        <!-- CITY LIGHTS -->
+        <div class="gallery-item" data-category="cities" data-collection="cities">
+            <img
+                src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=800"
+                alt="City skyline">
+            <div class="card-info">
+                <h3>City Lights</h3>
+                <p>Life in the city</p>
+                <span>View Collection →</span>
+            </div>
+        </div>
+
+
+        <!-- GREEN FOREST -->
+        <div class="gallery-item" data-category="nature" data-collection="forests">
+            <img
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800"
+                alt="Green forest">
+            <div class="card-info">
+                <h3>Green World</h3>
+                <p>Discover the magic of nature</p>
+                <span>View Collection →</span>
+            </div>
+        </div>
+
+
+        <!-- LITTLE EXPLORER -->
+        <div class="gallery-item" data-category="animals" data-collection="animals">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfx_Q-8vvk3HZ6KRjea1-68sv2Dsu4Q-H_yPStf_SG055k2lGMpigQjjV5&s=10"
+                alt="Dog portrait">
+            <div class="card-info">
+                <h3>Wild Life</h3>
+                <p>Meet our wild friends</p>
+                <span>View Collection →</span>
+            </div>
+        </div>
+
+
+        <!-- URBAN ARCHITECTURE -->
+        <div class="gallery-item" data-category="cities" data-collection="architecture">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRERxg1y_cLf9p9yRC8ONyNlsD6Y3otmdAUcyFEhEQKVnT_YVQj2gm_PxoO&s=10"
+                alt="Modern architecture">
+            <div class="card-info">
+                <h3>Urban Place</h3>
+                <p>Beautiful structures around us</p>
+                <span>View Collection →</span>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- COLLECTION SLIDER -->
+<section id="collectionGallery" class="collection-gallery">
+
+    <button id="backBtn" class="back-btn">
+        ← Back to Gallery
+    </button>
+
+    <div class="collection-heading">
+        <h2 id="collectionTitle">Collection</h2>
+        <p id="collectionDescription">
+            Discover beautiful photographs
+        </p>
+    </div>
+
+
+    <!-- SLIDER -->
+    <div class="slider">
+
+        <button
+            id="prevSlide"
+            class="slider-arrow"
+            aria-label="Previous image">
+            &#10094;
+        </button>
+
+
+        <div class="slide-container">
+
+            <img
+                id="slideImage"
+                src=""
+                alt="Collection photograph">
+
+            <div class="slide-caption">
+                <h3 id="slideTitle"></h3>
+                <p id="slideCounter">1 / 8</p>
+            </div>
+
+        </div>
+
+
+        <button
+            id="nextSlide"
+            class="slider-arrow"
+            aria-label="Next image">
+            &#10095;
+        </button>
+
+    </div>
+
+
+    <!-- SLIDER DOTS -->
+    <div
+        id="sliderDots"
+        class="slider-dots"
+        aria-label="Choose an image">
+    </div>
+
+
+    <p class="slider-hint">
+        Use the arrows or dots to explore the collection.
+    </p>
+
+</section>
+
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+
+    <button id="closeLightbox" class="close-lightbox" aria-label="Close">
+        &times;
+    </button>
+
+    <button id="lightboxPrev" class="lightbox-arrow" aria-label="Previous">
+        &#10094;
+    </button>
+
+    <img id="lightboxImage" src="" alt="Expanded photograph">
+
+    <button id="lightboxNext" class="lightbox-arrow" aria-label="Next">
+        &#10095;
+    </button>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+    <p>Visual Gallery | Explore. Discover. Enjoy.</p>
+</footer>
+
+
+<script src="code.js"></script>
+
+
+</body>
+
+</html>
